@@ -1,0 +1,422 @@
+/*--------------------------------------------------------------
+# Home Banner
+--------------------------------------------------------------*/
+section.pvan__banner {
+    background-image: url('../img/banner.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &.about__us {
+        background-image: url('../img/about.png');
+        align-items: end;
+
+        h1 {
+            text-align: left;
+            font-size: 55px;
+            line-height: 70.08px;
+            background: transparent;
+            -webkit-background-clip: initial;
+            background-clip: initial;
+            -webkit-text-fill-color: initial;
+            animation: none;
+            background-size: initial;
+            background-position: initial;
+            background-repeat: initial;
+            
+        }
+    }
+
+    h1 {
+        line-height: 82px;
+        letter-spacing: -0.03em;
+        margin-bottom: 20px;
+        background: linear-gradient(to right, var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), rgba(0, 0, 0, 0));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: h1anim 4s linear forwards;
+        background-size: 500% auto;
+        display: inline-block;
+        background-position: 150% center;
+        background-repeat: no-repeat;
+    }
+    p {
+        font-weight: 400;
+        margin-bottom: 20px;
+        background: linear-gradient(to right,  var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), rgba(0, 0, 0, 0));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: h1anim 7s linear forwards;
+        background-size: 500% auto;
+        display: inline-block;
+        background-position: 150% center;
+        background-repeat: no-repeat;
+    }
+    @keyframes h1anim {
+        from {
+            background-position: 150% center;
+        }
+
+        to {
+            background-position: 0 center;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# WHAT WE OFFER
+--------------------------------------------------------------*/
+
+section.what_we_offer {
+    line-height: 76px;
+    letter-spacing: -1.5px;
+    text-align: left;
+    padding-bottom: 10%;
+
+    h2 {
+        font-weight: 300;
+
+        span {
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+/*--------------------------------------------------------------
+# INDUSTRIES WE SERVE
+--------------------------------------------------------------*/
+
+section.industries__weServe {
+    padding-bottom: 10%;
+
+    .industriesCard {
+        background-color: #fff;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: auto;
+
+        .title {
+            padding: 60px 30px;
+
+            h4 {
+                font-size: 20px;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 152px;
+            object-fit: cover;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# ABOUT US SECTION
+--------------------------------------------------------------*/
+
+
+section.about__contents {
+    p {
+        width: 70%;
+        margin-bottom: 25px;
+    }
+}
+
+/*--------------------------------------------------------------
+# FOSTER SECTION
+--------------------------------------------------------------*/
+
+section.ready__to__foster {
+    text-align: center;
+    min-height: 55vh;
+
+    &.services {
+        min-height: 65vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 65px;
+        letter-spacing: -2px;
+        margin-bottom: 40px;
+
+    }
+}
+
+/*--------------------------------------------------------------
+# FOOTER SECTION
+--------------------------------------------------------------*/
+
+footer.pvan__footer {
+    background-color: #fff;
+    padding: 50px 0;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style-type: none;
+        justify-content: end
+    }
+}
+
+
+/*--------------------------------------------------------------
+# SERVICES SECTION
+--------------------------------------------------------------*/
+.main__title {
+    margin-bottom: 60px;
+
+    h3 {
+        font-size: 32px;
+    }
+}
+
+section.pvan__services {
+
+    .service {
+        box-shadow: 0px 1px 0.79px 0px #0000000D;
+        border: 1px solid #F3F3F3;
+        background-color: #fff;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        padding: 10px;
+
+        .serviceGrid {
+            &.contents {
+                padding: 80px 60px;
+
+                h2 {
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: #0D382FCC;
+                    margin-bottom: 20px;
+                    // font-size: 14px;
+                }
+
+                .btn-arrow {
+                    border: 1px solid #ECEBEB;
+                    background-color: transparent;
+                    box-shadow: none;
+                    color: #3C9C0E;
+                    border-radius: 8px;
+                    padding: 10px 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+
+            img.main {
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# PERSONAL PROTEXTIVE EQUIPMENTS
+--------------------------------------------------------------*/
+
+section.personal__protective__equipments {
+    background-color: #fff;
+    margin-top: 40px;
+
+    h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+    .Grid {
+        margin-bottom: 30px;
+
+        img {
+            height: 150px;
+            object-fit: contain;
+            border: 1px solid #EDEDED;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# ENQUIRY FORM
+--------------------------------------------------------------*/
+section.pvan__enquiry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+
+    .title {
+        text-align: center;
+        padding: 10% 0;
+
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+    label.form-label {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--primary-color);
+    }
+
+    .form-control {
+        border-radius: 12px;
+        border: 1.5px solid #000;
+        background: #FFF;
+        padding: 15px 20px;
+        margin-bottom: 12px;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .form-check-input {
+        position: absolute;
+        opacity: 0;
+    }
+
+
+    .form-check-label::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #D1D1D1;
+        margin-right: 10px;
+        vertical-align: middle;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .form-check-input:checked+.form-check-label::before {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    .form-group {
+        border-radius: 12px;
+        border: 1.5px solid #000;
+        background: #FFF;
+        padding: 14px 0;
+        margin-bottom: 20px;
+
+        .form-check-input {
+            width: 20px;
+            height: 20px;
+            margin-right: 14px;
+        }
+
+        label.form-check-label {
+            display: flex;
+            gap: 10px;
+            color: #19402D;
+            font-size: 16px;
+            letter-spacing: -0.36px;
+            align-items: center;
+            font-weight: 500;
+            cursor: pointer;
+
+            img {
+                height: 20px;
+            }
+        }
+    }
+
+    .forms {
+        padding-top: 30px;
+        color: #19402D;
+
+        .label {
+            p {
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+
+// 
+
+
+section.thankyou {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Privacy Policy
+--------------------------------------------------------------*/
+section.privacy__policy{
+    h1{
+        font-size: 44px;
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+    p, ul, h4{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    h4{
+        font-weight: 600;
+        margin-top: 40px;
+    }
+}

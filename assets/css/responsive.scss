@@ -1,0 +1,895 @@
+/* Extra small devices (phones, < 600px) */
+@media (max-width: 599px) {
+    h1 {
+        font-size: 40px;
+    }
+    .sm-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .header {
+        padding: 15px 0;
+        // border-bottom: 1px solid #fff;
+
+        .logo img {
+            width: 200px;
+        }
+    }
+    section.privacy__policy h1{
+        font-size: 34px;
+    }
+
+    section.pvan__banner {
+        height: auto;
+        min-height: 90vh;
+        &.sm-height{
+            min-height: 100vh;
+        }
+
+        button {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+
+            br {
+                display: none;
+            }
+        }
+
+        h1 {
+            line-height: 48px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    section.what_we_offer {
+        h2 {
+            font-size: 42px;
+
+            br {
+                display: none;
+            }
+
+            span {}
+        }
+    }
+
+    .main__title h3 {
+        font-size: 26px;
+    }
+
+    section.pvan__services {
+        .service {
+            padding-bottom: 0;
+
+            img.main {
+                margin-bottom: 15px;
+            }
+
+            .serviceGrid.contents {
+                padding: 30px;
+
+            }
+
+            .col-md-6.ps-0 {
+                padding-left: 15px !important;
+            }
+
+            .col-md-6.pe-0 {
+                padding-right: 15px !important;
+            }
+        }
+    }
+
+    section.industries__weServe {
+        .col-md-4 {
+            padding: 0 15px !important;
+
+            .industriesCard {}
+        }
+
+    }
+
+    section.ready__to__foster {
+        h2 {
+            font-size: 34px;
+            line-height: 50px;
+            margin-bottom: 10px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    footer.pvan__footer {
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            justify-content: center;
+        }
+
+    }
+
+    section.ready__to__foster {
+        min-height: 45vh;
+    }
+
+    // ABOUT US
+
+    section.pvan__banner.about__us {
+        h1 {
+            font-size: 40px;
+            line-height: 40px;
+
+            br {
+                display: none;
+            }
+        }
+
+    }
+
+    section.about__contents p {
+        width: 90%;
+    }
+
+    .row-cols-5>* {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    section.ready__to__foster.services {
+        min-height: 45vh;
+    }
+
+    section.pvan__enquiry {
+        .title {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        .col-md-6.pe-0 {
+            padding: 0 15px !important;
+        }
+    }
+
+    section.thankyou {
+        height: 80vh;
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+/* Small devices (tablets, 600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .col-tab-12 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+
+    }
+
+    .header {
+        padding: 30px 0;
+        border-bottom: 1px solid #fff;
+
+        .logo img {
+            width: 220px;
+        }
+    }
+
+    section.pvan__banner {
+        height: auto;
+        min-height: 65vh;
+
+        button {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+
+            br {
+                display: none;
+            }
+        }
+
+        h1 {
+            line-height: 69px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    section.what_we_offer .col-md-8 {
+        flex: 0 0 auto;
+        width: 86.666667%;
+    }
+
+    section.what_we_offer {
+        h2 {
+            font-size: 42px;
+
+            br {
+                display: none;
+            }
+
+        }
+    }
+
+    .main__title h3 {
+        font-size: 26px;
+    }
+
+    section.pvan__services {
+        .tab-flex {
+            display: flex;
+            gap: 10px;
+
+            .service {
+                width: 50%;
+
+                .serviceGrid.contents {
+                    padding: 30px;
+
+                    p {
+                        -webkit-line-clamp: 6;
+                        line-clamp: 6;
+                        -webkit-box-orient: vertical;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                }
+            }
+        }
+
+        .service {
+            padding-bottom: 0;
+
+            img.main {
+                margin-bottom: 15px;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .serviceGrid.contents {
+                padding: 30px;
+
+            }
+
+            .col-md-6.ps-0 {
+                padding-left: 15px !important;
+            }
+
+            .col-md-6.pe-0 {
+                padding-right: 15px !important;
+            }
+        }
+    }
+
+    section.industries__weServe {
+        .industriesCard {
+            margin-bottom: 0;
+
+            img {
+                width: 100%;
+                height: 100px;
+            }
+        }
+
+        .industriesCard .title {
+            padding: 20px;
+            min-height: 100px;
+        }
+
+        .col-md-4 {
+            padding: 5px !important;
+        }
+
+    }
+
+    section.ready__to__foster {
+        h2 {
+            font-size: 45px;
+            line-height: 60px;
+            margin-bottom: 30px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    footer.pvan__footer {
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            justify-content: center;
+        }
+
+    }
+
+    section.ready__to__foster {
+        min-height: 45vh;
+    }
+
+    // ABOUT US
+
+    section.pvan__banner.about__us {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+
+            br {
+                display: none;
+            }
+        }
+
+    }
+
+    section.about__contents p {
+        width: 90%;
+    }
+
+    .row-cols-5>* {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    section.ready__to__foster.services {
+        min-height: 45vh;
+    }
+
+    section.pvan__enquiry {
+        .title {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        .col-md-6.pe-0 {
+            padding: 0 15px !important;
+        }
+    }
+
+    section.thankyou {
+        height: 80vh;
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    section.personal__protective__equipments {
+        .col-md-4 {
+            flex: 0 0 auto;
+            width: 73.333333%;
+        }
+    }
+
+    section.pvan__enquiry {
+        .col-md-10 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .col-md-5 {
+            width: 61.666667%;
+        }
+    }
+}
+
+/* Medium devices (small desktops, 769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .col-tab-12 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+
+    }
+
+    .header {
+        padding: 30px 0;
+        border-bottom: 1px solid #fff;
+
+        .logo img {
+            width: 220px;
+        }
+    }
+
+    section.pvan__banner {
+        height: auto;
+        min-height: 65vh;
+
+        button {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+
+            br {
+                display: none;
+            }
+        }
+
+        h1 {
+            line-height: 69px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    section.what_we_offer .col-md-8 {
+        flex: 0 0 auto;
+        width: 86.666667%;
+    }
+
+    section.what_we_offer {
+        h2 {
+            font-size: 42px;
+
+            br {
+                display: none;
+            }
+
+        }
+    }
+
+    .main__title h3 {
+        font-size: 26px;
+    }
+
+    section.pvan__services {
+        .tab-flex {
+            display: flex;
+            gap: 10px;
+
+            .service {
+                width: 50%;
+
+                .serviceGrid.contents {
+                    padding: 30px;
+
+                    p {
+                        -webkit-line-clamp: 6;
+                        line-clamp: 6;
+                        -webkit-box-orient: vertical;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                }
+            }
+        }
+
+        .service {
+            padding-bottom: 0;
+
+            img.main {
+                margin-bottom: 15px;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .serviceGrid.contents {
+                padding: 30px;
+
+            }
+
+            .col-md-6.ps-0 {
+                padding-left: 15px !important;
+            }
+
+            .col-md-6.pe-0 {
+                padding-right: 15px !important;
+            }
+        }
+    }
+
+    section.industries__weServe {
+        .industriesCard {
+            margin-bottom: 0;
+
+            img {
+                width: 100%;
+                height: 100px;
+            }
+        }
+
+        .industriesCard .title {
+            padding: 20px;
+            min-height: 100px;
+        }
+
+        .col-md-4 {
+            padding: 5px !important;
+        }
+
+    }
+
+    section.ready__to__foster {
+        h2 {
+            font-size: 45px;
+            line-height: 60px;
+            margin-bottom: 30px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    footer.pvan__footer {
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            justify-content: center;
+        }
+
+    }
+
+    section.ready__to__foster {
+        min-height: 45vh;
+    }
+
+    // ABOUT US
+
+    section.pvan__banner.about__us {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+
+            br {
+                display: none;
+            }
+        }
+
+    }
+
+    section.about__contents p {
+        width: 90%;
+    }
+
+    .row-cols-5>* {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    section.ready__to__foster.services {
+        min-height: 45vh;
+    }
+
+    section.pvan__enquiry {
+        .title {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        .col-md-6.pe-0 {
+            padding: 0 15px !important;
+        }
+    }
+
+    section.thankyou {
+        height: 80vh;
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    section.personal__protective__equipments {
+        .col-md-4 {
+            flex: 0 0 auto;
+            width: 73.333333%;
+        }
+    }
+
+    section.pvan__enquiry {
+        .col-md-10 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .col-md-5 {
+            width: 61.666667%;
+        }
+    }
+}
+
+/* Large devices (desktops, > 1024px) */
+@media (min-width: 1025px) and (max-width: 1400px) {
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .col-tab-12 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+
+    }
+
+    .header {
+        padding: 30px 0;
+        border-bottom: 1px solid #fff;
+
+        .logo img {
+            width: 220px;
+        }
+    }
+
+    section.pvan__banner {
+        height: auto;
+        min-height: 90vh;
+
+        button {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+
+            br {
+                display: none;
+            }
+        }
+
+        h1 {
+            line-height: 69px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+
+
+    section.what_we_offer {
+        h2 {
+            font-size: 42px;
+
+            br {
+                display: none;
+            }
+
+        }
+    }
+
+    .main__title h3 {
+        font-size: 26px;
+    }
+
+    section.pvan__services {
+        .tab-flex {
+            display: flex;
+            gap: 10px;
+
+            .service {
+                width: 50%;
+
+                .serviceGrid.contents {
+                    padding: 30px;
+
+                    p {
+                        -webkit-line-clamp: 4;
+                        line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                }
+            }
+        }
+
+        .service {
+            padding-bottom: 0;
+
+            img.main {
+                margin-bottom: 15px;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .serviceGrid.contents {
+                padding: 30px;
+
+            }
+
+            .col-md-6.ps-0 {
+                padding-left: 15px !important;
+            }
+
+            .col-md-6.pe-0 {
+                padding-right: 15px !important;
+            }
+        }
+    }
+
+    section.industries__weServe {
+        .industriesCard {
+            margin-bottom: 0;
+
+            img {
+                width: 100%;
+                height: 100px;
+            }
+        }
+
+        .industriesCard .title {
+            padding: 20px;
+            min-height: 100px;
+        }
+
+        .col-md-4 {
+            padding: 10px !important;
+        }
+
+    }
+
+    section.ready__to__foster {
+        h2 {
+            font-size: 45px;
+            line-height: 60px;
+            margin-bottom: 30px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    footer.pvan__footer {
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            justify-content: center;
+        }
+
+    }
+
+    section.ready__to__foster {
+        min-height: 45vh;
+    }
+
+    // ABOUT US
+
+    section.pvan__banner.about__us {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+
+            br {
+                display: none;
+            }
+        }
+
+    }
+
+    section.about__contents p {
+        width: 90%;
+    }
+
+    .row-cols-5>* {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    section.ready__to__foster.services {
+        min-height: 45vh;
+    }
+
+    section.pvan__enquiry {
+        .title {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        .col-md-6.pe-0 {
+            padding: 0 15px !important;
+        }
+    }
+
+    section.thankyou {
+        height: 80vh;
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    section.personal__protective__equipments {
+        .col-md-4 {
+            flex: 0 0 auto;
+            width: 73.333333%;
+        }
+    }
+
+    section.pvan__enquiry {
+        .col-md-10 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .col-md-5 {
+            width: 61.666667%;
+        }
+    }
+}
