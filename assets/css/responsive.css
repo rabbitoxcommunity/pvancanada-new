@@ -19,9 +19,6 @@
     height: auto;
     min-height: 90vh;
   }
-  section.pvan__banner.sm-height {
-    min-height: 100vh;
-  }
   section.pvan__banner button {
     font-size: 14px;
   }
@@ -66,8 +63,8 @@
   }
   section.ready__to__foster h2 {
     font-size: 34px;
-    line-height: 50px;
-    margin-bottom: 10px;
+    line-height: 42px;
+    margin-bottom: 24px;
   }
   section.ready__to__foster h2 br {
     display: none;
@@ -83,8 +80,8 @@
     min-height: 45vh;
   }
   section.pvan__banner.about__us h1 {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 33px;
+    line-height: 38px;
   }
   section.pvan__banner.about__us h1 br {
     display: none;

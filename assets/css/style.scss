@@ -29,7 +29,7 @@ section.pvan__banner {
             background-size: initial;
             background-position: initial;
             background-repeat: initial;
-            
+
         }
     }
 
@@ -47,10 +47,11 @@ section.pvan__banner {
         background-position: 150% center;
         background-repeat: no-repeat;
     }
+
     p {
         font-weight: 400;
         margin-bottom: 20px;
-        background: linear-gradient(to right,  var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), rgba(0, 0, 0, 0));
+        background: linear-gradient(to right, var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), rgba(0, 0, 0, 0));
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -60,6 +61,7 @@ section.pvan__banner {
         background-position: 150% center;
         background-repeat: no-repeat;
     }
+
     @keyframes h1anim {
         from {
             background-position: 150% center;
@@ -288,6 +290,10 @@ section.pvan__enquiry {
     width: 100%;
     min-height: 100vh;
 
+    #numberForm{
+        padding-top: 10%;
+    }
+
     .title {
         text-align: center;
         padding: 10% 0;
@@ -301,6 +307,15 @@ section.pvan__enquiry {
         font-size: 16px;
         font-weight: 500;
         color: var(--primary-color);
+    }
+
+    .form-select {
+        padding: 15px 20px;
+        border-radius: 12px;
+        border: 1.5px solid #000;
+        &:focus {
+            box-shadow: none;
+        }
     }
 
     .form-control {
@@ -405,18 +420,52 @@ section.thankyou {
 /*--------------------------------------------------------------
 # Privacy Policy
 --------------------------------------------------------------*/
-section.privacy__policy{
-    h1{
+section.privacy__policy {
+    h1 {
         font-size: 44px;
         padding-top: 15%;
         padding-bottom: 5%;
     }
-    p, ul, h4{
+
+    p,
+    ul,
+    h4 {
         font-size: 18px;
         margin-bottom: 20px;
     }
-    h4{
+
+    h4 {
         font-weight: 600;
         margin-top: 40px;
     }
 }
+
+
+/* Style for the wrapper div */
+.agreeCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    p{
+        width: 80%;
+    }
+    a{
+        text-decoration: underline;
+    }
+    .form-check-label{
+        display: flex;
+        align-items: start;
+        font-weight: 500;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 30px !important;
+            height: 30px !important;
+            border-radius: 5px !important;
+            border: 2px solid #000000 !important;
+            margin-top: 5px;
+            
+        }
+    }
+}
+

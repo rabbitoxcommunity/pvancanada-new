@@ -6,8 +6,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Pvan Canada Inc | Shaping global HSE practices for a better tomorrow</title>
     <meta name="description" content="Shaping global HSE practices for a better tomorrow">
-    <meta name="keywords" content="Safety management system (SMS), Auditing, HSE Programs, HSE Management Software , Key Instructor Program, PPE Procurement & Supplies">
-  
+    <meta name="keywords"
+        content="Safety management system (SMS), Auditing, HSE Programs, HSE Management Software , Key Instructor Program, PPE Procurement & Supplies">
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Pvan Canada Inc | Shaping global HSE practices for a better tomorrow">
     <meta property="og:description" content="Shaping global HSE practices for a better tomorrow">
@@ -52,9 +53,11 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="about.html">About us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <a href="enquiry.html"><li class="btn-primary">Request a Service</li></a>
+                    <a href="enquiry.html">
+                        <li class="btn-primary">Request a Service</li>
+                    </a>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -159,6 +162,18 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        name="flexRadioDefault" id="Other Services">
+                                                    <label class="form-check-label" for="Other Services">
+                                                        <img src="assets/img/form-icon.svg" alt="">
+                                                        Other Services
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div id="errorContainer"></div>
                                         <div class="col-md-12 dflex-btns mt-4">
                                             <button class="btn-form" id="nextBtn"> Next <img
@@ -172,55 +187,91 @@
                                       <img src="assets/img/back-arrow.svg" alt="">
                                     </div> -->
                                     <div class="row">
-                                      <div class="col-md-6 pe-0 sm-pad-12">
-                                        <div class="mb-3">
-                                          <label class="form-label">First Name</label>
-                                          <input type="text" class="form-control" placeholder="Your first name">
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6 sm-pad-0">
-                                        <div class="mb-3">
-                                          <label class="form-label">First Name</label>
-                                          <input type="text" class="form-control" placeholder="Your last name">
-                                        </div>
-                                      </div>
-                                      <div class="col-md-12">
-                                        <div class="mb-3">
-                                          <label class="form-label">E-mail</label>
-                                          <input type="text" class="form-control" placeholder="name@example.com">
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6 pe-0 sm-pad-12">
-                                        <div class="mb-3">
-                                          <label class="form-label">Phone number</label>
-                                          <input type="text" class="form-control" placeholder="+001 000 000 000">
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <div class="mb-3">
-                                          <label class="form-label">Country</label>
-                                          <!-- <input type="text" class="form-control" placeholder="Canada"> -->
-                                          <div class="form-group">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" checked
-                                                    name="flexRadioDefault" id="Canada">
-                                                <label class="form-check-label" for="Canada">
-                                                    <img src="assets/img/form-icon.svg" alt="">
-                                                    Canada
-                                                </label>
+                                        <div class="col-md-6 pe-0 sm-pad-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">First Name</label>
+                                                <input type="text" class="form-control" placeholder="Your first name">
                                             </div>
                                         </div>
+                                        <div class="col-md-6 sm-pad-0">
+                                            <div class="mb-3">
+                                                <label class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Your last name">
+                                            </div>
                                         </div>
-                                      </div>
-                                      
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">E-mail</label>
+                                                <input type="text" class="form-control" placeholder="name@example.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pe-0 sm-pad-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Phone number</label>
+                                                <input type="text" class="form-control" placeholder="+001 000 000 000">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="countrySelect" class="form-label">Country</label>
+                                                <select class="form-select" id="countrySelect" name="country">
+                                                    <option value="Canada" selected>Canada</option>
+                                                    <option value="UAE">UAE</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 sm-pad-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Company Name</label>
+                                                <input type="text" class="form-control" placeholder="Your company name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="Industry" class="form-label">What Industry do you work in?</label>
+                                                <select class="form-select" id="Industry" name="Industry">
+                                                    <option value="">Please select</option>
+                                                    <option value="Technology">Technology</option>
+                                                    <option value="Energy">Energy</option>
+                                                    <option value="Risk and Financial Services">Risk and Financial Services</option>
+                                                    <option value="Food and Beverage">Food and Beverage</option>
+                                                    <option value="Retail">Retail</option>
+                                                    <option value="Consumer Brands">Consumer Brands</option>
+                                                    <option value="Manufacturing">Manufacturing</option>
+                                                    <option value="Railroad">Railroad</option>
+                                                    <option value="Chemical">Chemical</option>
+                                                    <option value="Other">Other</option>
+                                                    <option value="Pharmaceuticals and life science">Pharmaceuticals and life science</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 sm-pad-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Questions? How can we help you? (optional)</label>
+                                                <textarea rows="4" class="form-control" placeholder="Write your inquiry or specific needs…"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 sm-pad-12">
+                                            <div class="mb-3">
+                                                <div class="form-check ps-0 agreeCheckbox">
+                                                    <input class="form-check-input" type="checkbox" value="" id="agreeTerms">
+                                                    <label class="form-check-label" for="agreeTerms">
+                                                       <p> I agree that Pvan Canada Inc can use my data for the purposes of dealing with my request, 
+                                                        in accordance with the Pvan Canada Inc <a href="privacy.html" target="_blank">Online Privacy policy</a></p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    
+
                                     <div class="dflex-btns mt-3">
-                                        <div class="arrow__back btn-back"> <img src="assets/img/form-arrow.svg" style="transform: rotate(180deg);" alt=""> Back</div>
-                                    <button class="btn-submit btn-form">Submit</button>
+                                        <div class="arrow__back btn-back"> <img src="assets/img/form-arrow.svg"
+                                                style="transform: rotate(180deg);" alt=""> Back</div>
+                                        <button class="btn-submit btn-form">Submit</button>
                                     </div>
-                                    
-                                  </div>
+
+                                </div>
 
                             </div>
                         </div>
@@ -230,20 +281,20 @@
         </section>
         <footer class="pvan__footer">
             <div class="container">
-              <div class="row justify-content-between">
-                <div class="col-md-6">
-                  <p><span id="year"></span> © Pvan canada Inc</p>
+                <div class="row justify-content-between">
+                    <div class="col-md-6">
+                        <p><span id="year"></span> © Pvan Canada Inc</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                  <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="privacy.html">Privacy policy</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
-          </footer>
+        </footer>
     </main>
 
 
@@ -255,10 +306,10 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="lds-ripple">
-          <div></div>
-          <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </div>
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

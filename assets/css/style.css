@@ -244,6 +244,9 @@ section.pvan__enquiry {
   width: 100%;
   min-height: 100vh;
 }
+section.pvan__enquiry #numberForm {
+  padding-top: 10%;
+}
 section.pvan__enquiry .title {
   text-align: center;
   padding: 10% 0;
@@ -255,6 +258,14 @@ section.pvan__enquiry label.form-label {
   font-size: 16px;
   font-weight: 500;
   color: var(--primary-color);
+}
+section.pvan__enquiry .form-select {
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1.5px solid #000;
+}
+section.pvan__enquiry .form-select:focus {
+  box-shadow: none;
 }
 section.pvan__enquiry .form-control {
   border-radius: 12px;
@@ -341,11 +352,40 @@ section.privacy__policy h1 {
   padding-top: 15%;
   padding-bottom: 5%;
 }
-section.privacy__policy p, section.privacy__policy ul, section.privacy__policy h4 {
+section.privacy__policy p,
+section.privacy__policy ul,
+section.privacy__policy h4 {
   font-size: 18px;
   margin-bottom: 20px;
 }
 section.privacy__policy h4 {
   font-weight: 600;
   margin-top: 40px;
+}
+
+/* Style for the wrapper div */
+.agreeCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.agreeCheckbox p {
+  width: 80%;
+}
+.agreeCheckbox a {
+  text-decoration: underline;
+}
+.agreeCheckbox .form-check-label {
+  display: flex;
+  align-items: start;
+  font-weight: 500;
+}
+.agreeCheckbox .form-check-label::before {
+  content: "";
+  display: inline-block;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 5px !important;
+  border: 2px solid #000000 !important;
+  margin-top: 5px;
 }/*# sourceMappingURL=style.css.map */
