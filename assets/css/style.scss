@@ -20,6 +20,7 @@ section.pvan__banner {
         h1 {
             text-align: left;
             font-size: 55px;
+            padding-right: 40px;
             line-height: 70.08px;
             background: transparent;
             -webkit-background-clip: initial;
@@ -110,7 +111,8 @@ section.industries__weServe {
         overflow: auto;
 
         .title {
-            padding: 60px 30px;
+            padding: 50px 30px;
+            padding-bottom: 20px;
 
             h4 {
                 font-size: 20px;
@@ -290,7 +292,7 @@ section.pvan__enquiry {
     width: 100%;
     min-height: 100vh;
 
-    #numberForm{
+    #numberForm {
         padding-top: 10%;
     }
 
@@ -313,6 +315,7 @@ section.pvan__enquiry {
         padding: 15px 20px;
         border-radius: 12px;
         border: 1.5px solid #000;
+
         &:focus {
             box-shadow: none;
         }
@@ -431,12 +434,14 @@ section.privacy__policy {
     ul,
     h4 {
         font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
+        color: #19402D;
     }
 
     h4 {
         font-weight: 600;
-        margin-top: 40px;
+        margin-top: 30px;
+        
     }
 }
 
@@ -444,28 +449,51 @@ section.privacy__policy {
 /* Style for the wrapper div */
 .agreeCheckbox {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 10px;
-    p{
+    cursor: pointer;
+
+    p {
         width: 80%;
+        cursor: pointer;
     }
-    a{
+
+    a {
         text-decoration: underline;
     }
-    .form-check-label{
-        display: flex;
-        align-items: start;
-        font-weight: 500;
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 30px !important;
-            height: 30px !important;
-            border-radius: 5px !important;
-            border: 2px solid #000000 !important;
-            margin-top: 5px;
-            
-        }
+
+    input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 31px;
+        height: 29px;
+        border: 1.5px solid #000;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: white;
+        margin-top: 6px;
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        position: relative;
+    }
+
+    /* Custom tick (smaller size) */
+    input[type="checkbox"]:checked::after {
+        content: "";
+        position: absolute;
+        top: 44%;
+        left: 52%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 7px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
     }
 }
-

@@ -21,6 +21,7 @@ section.pvan__banner.about__us {
 section.pvan__banner.about__us h1 {
   text-align: left;
   font-size: 55px;
+  padding-right: 40px;
   line-height: 70.08px;
   background: transparent;
   -webkit-background-clip: initial;
@@ -98,7 +99,8 @@ section.industries__weServe .industriesCard {
   overflow: auto;
 }
 section.industries__weServe .industriesCard .title {
-  padding: 60px 30px;
+  padding: 50px 30px;
+  padding-bottom: 20px;
 }
 section.industries__weServe .industriesCard .title h4 {
   font-size: 20px;
@@ -356,36 +358,57 @@ section.privacy__policy p,
 section.privacy__policy ul,
 section.privacy__policy h4 {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  color: #19402D;
 }
 section.privacy__policy h4 {
   font-weight: 600;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 /* Style for the wrapper div */
 .agreeCheckbox {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 10px;
+  cursor: pointer;
+  /* Custom tick (smaller size) */
 }
 .agreeCheckbox p {
   width: 80%;
+  cursor: pointer;
 }
 .agreeCheckbox a {
   text-decoration: underline;
 }
-.agreeCheckbox .form-check-label {
-  display: flex;
-  align-items: start;
-  font-weight: 500;
-}
-.agreeCheckbox .form-check-label::before {
-  content: "";
+.agreeCheckbox input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 31px;
+  height: 29px;
+  border: 1.5px solid #000;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
   display: inline-block;
-  width: 30px !important;
-  height: 30px !important;
-  border-radius: 5px !important;
-  border: 2px solid #000000 !important;
-  margin-top: 5px;
+  vertical-align: middle;
+  background-color: white;
+  margin-top: 6px;
+}
+.agreeCheckbox input[type=checkbox]:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  position: relative;
+}
+.agreeCheckbox input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  top: 44%;
+  left: 52%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
 }/*# sourceMappingURL=style.css.map */

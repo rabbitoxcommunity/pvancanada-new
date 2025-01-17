@@ -82,6 +82,7 @@
   section.pvan__banner.about__us h1 {
     font-size: 33px;
     line-height: 38px;
+    padding-right: 0;
   }
   section.pvan__banner.about__us h1 br {
     display: none;
@@ -401,6 +402,7 @@
   section.pvan__banner.about__us h1 {
     font-size: 40px;
     line-height: 50px;
+    padding-right: 0;
   }
   section.pvan__banner.about__us h1 br {
     display: none;
@@ -604,5 +606,10 @@
   }
   section.pvan__enquiry .col-md-5 {
     width: 61.666667%;
+  }
+}
+@media (min-width: 2048px) and (max-width: 7000px) {
+  section.what_we_offer {
+    padding-top: 10% !important;
   }
 }/*# sourceMappingURL=responsive.css.map */
